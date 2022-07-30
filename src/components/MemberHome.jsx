@@ -12,15 +12,15 @@ export default function MemberHome() {
     ]
     return (
         <>
-            <div className="container p-5">
-                <div className="row">
+            <div style={{padding:"100px"}} >
+                <div >
                     <Title name="Member Login" />
                 </div>
-                <div className="row">
-                    <div className="col-6">
+                <div >
+                    <div >
                         <TableBox name="Table" headers={["", "Model"]} data={[["Honda", "Arnold"], ["Toyota", "Camry"], ["Hyundai", "Elantra"]]} />
                     </div>
-                    <div className="col-6">
+                    <div >
                     <TableBox name="Table" headers={h} data={d} />
 
                     </div>

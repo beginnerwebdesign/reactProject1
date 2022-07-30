@@ -8,9 +8,10 @@ import TableRow from '@mui/material/TableRow';
 function TableBox(props) {
   return (
     <>
-      <div className='container text-center'>
-        <div className='row justify-content-center mt-5'>
+      <div style={{textAlign:"center"}}>
+        <div  style={{textAlign:"center"}}>
         <h5>{props.name}</h5>
+        <div>
             <Table aria-label="simple table" style={{ width: "50%",backgroundColor:"lightgrey"}}>
               <TableHead>
                 <TableRow>
@@ -33,6 +34,7 @@ function TableBox(props) {
                 }
               </TableBody>
             </Table>
+            </div>
         </div>
 
       </div>

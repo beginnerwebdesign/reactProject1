@@ -15,20 +15,17 @@ export default function SignIn()
                 <Title name="Sign In" />
             </div>
             <form onSubmit={e=>{email?navigate("/adminhome"):navigate("/memberhome");}}>
-            <div className="row align-items-center">
-                <div className="col-4 offset-4 p-2">
-                <FormLabel>Email</FormLabel>
-                </div>
-                <div className="col-5 offset-4 p-2">
+            <div style={{textAlign:"center"}}>
+                <div style={{padding:"20px"}}>
+                <label style={{paddingRight:"20px"}}>Email</label>
                 <TextField onChange={e=>setEmail(e.target.value)} value={email} id="outlined-basic" label="Email" variant="outlined" size='small' />
                 </div>
-                <div className="col-5 offset-4 p-2">
-                <FormLabel>Password</FormLabel>
-                </div>
-                <div className="col-5 offset-4 p-2">
+                <div style={{padding:"20px"}} >
+                <label style={{paddingRight:"20px"}}>Password</label>
+                
                 <TextField id="outlined-basic" label="Password" variant="outlined" size='small' />
                 </div>
-                <div className="col-5 offset-4 p-2">
+                <div style={{padding:"20px"}}>
                     <Button type="submit">Login</Button>
                     <Button onClick={e=>navigate("/verify")} >Forgot Password</Button>
                 </div>

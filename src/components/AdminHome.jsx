@@ -27,36 +27,36 @@ export default function AdminHome() {
       ];
     return (
         <>
-            <div className="container p-5">
-                <div className="row">
+            <div >
+                <div >
                     <Title name="Admin Login" />
                 </div>
-                <div className="row">
-                    <div className="col-6">
+                <div >
+                    <div >
                         <TableBox name="Table" headers={["", "Model"]} data={[["Honda", "Arnold"], ["Toyota", "Camry"], ["Hyundai", "Elantra"]]} />
                         
                     </div>
-                    <div className="col-6">
+                    <div >
                     <TableBox name="Table" headers={h} data={d} />
 
                     </div>
 
                 </div>
-                <div className="row">
-                    <div className="col-3 offset-2 p-2">
-                    <PieChart width={200} height={200}>
+                <div  >
+                  
+                    <PieChart width={200} height={200} className="chart" >
           <Pie data={info} dataKey="students" outerRadius={100} fill="green" />
         </PieChart>
-                    </div>
-                    <div className="col-3 offset-2 p-2">
-                    <BarChart width={300} height={300} data={info2}>
+                    
+                    
+                    <BarChart width={300} height={300} data={info2} className="chart" >
     <Bar dataKey="students" fill="green" />
     <CartesianGrid stroke="#ccc" />
     <XAxis dataKey="name" />
     <YAxis />
   </BarChart>
                     </div>
-                </div>
+               
             </div></>
     )
 }

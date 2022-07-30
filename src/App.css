@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+.about
+{
+  width:28%;
+  display: inline-block;
+  margin-right: 50px;
+}
+.chart
+{
+  width: 60%;
+  display: inline;
+}
+.contact
+{
+  text-align: center;
+  padding: 10px;
+}
+.icons div
+
+{
+  color: white;
+  display: inline-block;
+  width: 20%;
+ padding: 5%;
+}
+.signup
+{
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+.signup label
+{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

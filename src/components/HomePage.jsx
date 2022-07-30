@@ -3,9 +3,9 @@ export default function HomePage()
 {
     return(
         <>
-        <div className="container p-5">
-            <div className="row">
-                <div className="col-6">
+        <div style={{paddingBottom:"100px"}} >
+            <div >
+                <div style={{padding:"30px"}}>
                     <Title name="Azkaban" />
                     <p style={{textAlign:"justify",lineHeight:"32px"}}>
                 Lorem ipsum dolor sit amet, 

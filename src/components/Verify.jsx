@@ -7,18 +7,18 @@ export default function Verify()
     let navigate=useNavigate();
     return(
         <>
-        <div className="container p-5">
+        <div style={{textAlign:"center"}} >
             <form>
-            <div className="row">
+            <div >
                 <Title name="Verify your email" />
             </div>
-            <div className="row">
-                <div className="col-6 offset-3">
+            <div >
+                <div >
                     <TextField label="Enter Email" variant="outlined" size="small" />
                 </div>
             </div>
-            <div className="row">
-                <div className="col-3 offset-5">
+            <div >
+                <div >
                     <Button onClick={e=>navigate("/forgotpassword")}  type="submit">Submit</Button>
                 </div>
             </div>
